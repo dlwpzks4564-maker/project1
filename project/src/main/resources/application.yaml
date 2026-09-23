@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: notice
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/logic
+    username: postgres
+    password: 1004
+    diver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    show-sql: false
+    properties:
+      hibernate:
+        format-sql: true
+  sql:
+    init:
+      mode: always
+
+  thymeleaf:
+    cache: false
+
+server:
+  port: 8081
